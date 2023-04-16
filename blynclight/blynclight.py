@@ -1,4 +1,7 @@
-from collections import Sequence
+try:
+    from collections.abc import Sequence
+except ImportError:
+    from collections import Sequence
 from contextlib import contextmanager
 from enum import Enum
 from typing import Dict, List, Tuple, Union
